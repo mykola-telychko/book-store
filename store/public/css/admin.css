@@ -1,0 +1,144 @@
+body
+{
+    background-color: #F6F6F6;
+}
+
+
+
+#login
+{
+    background-color: #CCC;
+    margin: 0 auto;
+    width: 350px;
+    margin-top: 150px;
+
+}
+
+
+
+#wrapper
+{
+    margin: 0 auto;
+    width: 85%;
+    min-width: 700px;
+}
+
+
+
+#header
+{
+    height: 6px;
+    padding: 20px 30px 20px 30px;
+    background-color: #1C2A48;
+    -moz-border-radius: 10px;
+    -webkit-border-redius: 10px;
+    border-radius: 10px 10px 10px 0px;
+    font-family: 'Raleway', sans-serif;
+    color: #FF9800;
+
+
+}
+
+
+#header h2
+{
+    margin-left: 10px;
+    margin-top: -15px;
+}
+
+
+
+#leftmenu
+{
+    float: left;
+    width: 49%;
+    font-weight: bold;
+}
+
+
+#leftmenu p
+{
+    cursor: pointer;
+}
+
+
+#leftmenu p a
+{
+    color: #333;
+    text-decoration: none;
+}
+
+#leftmenu p a:hover
+{
+    color: #333;
+    color: gray;
+}
+
+
+
+#left
+{
+    float: left;
+    width: 39%;
+    margin-left: -500px;
+    color: black
+}
+
+#left p
+{
+    cursor: pointer;
+}
+
+
+#right
+{
+    float: left;
+    width: 60%;
+    display: none;
+    margin-left: -300px;
+}
+
+
+
+#show_user_res
+{
+    display: both;
+      display: none;
+
+}
+
+
+
+#content
+{
+    float: right;
+    width: 39%;
+      display: none;
+}
+
+
+
+#leftmenu ul li
+{
+    list-style-type: none;
+    cursor: pointer;
+
+}
+
+
+#clear
+{
+    clear: both;
+}
+
+
+#footer
+{
+     clear: both;/*очистить поток */
+     padding: 10px 20px;
+     background-color: #1C2A48;
+     color: #D3D3D3;
+     -moz-border-radius: 10px;
+     -webkit-border-redius: 10px;
+     border-radius: 10px;
+}

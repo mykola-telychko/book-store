@@ -1,0 +1,67 @@
+body{
+  background-color: #C7D6FF;
+  font-family: Helvetica, Tahoma;
+}
+
+table, th, td {
+  border: 1px solid gray;
+  background-color: white;
+}
+
+table {
+  width: 400px;
+}
+
+.edit_table{
+  margin-top: 30px;
+}
+
+.add_book{
+  border: 3px solid white;
+  border-radius: 5px;
+  width: 768px;
+}
+
+.field_{
+  width: 400px;
+}
+
+.deletetable{
+  color: white;
+  font-weight: bold;
+  background-color: #FF471F;
+  text-decoration: none;
+  border: 2px solid #FF471F;
+  border-radius: 2px;
+}
+
+
+
+.addnewbook{
+  color: black;
+  font-weight: bold;
+  background-color: #88CD8B;
+  text-decoration: none;
+  border: 2px solid #88CD8B;
+  border-radius: 2px;
+}
+
+
+
+.savebook{
+  color: black;
+  font-weight: bold;
+  background-color: #88CD8B;
+  text-decoration: none;
+  border: 2px solid #88CD8B;
+  border-radius: 2px;
+}
+
+
+.cutty{
+  text-decoration: none;
+}
+
+.h_padd {
+  margin-left: 50px;
+}
