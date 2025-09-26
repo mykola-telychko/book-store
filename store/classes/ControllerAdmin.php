@@ -1,3 +1,24 @@
+/**
+ * ControllerAdmin class handles administrative actions for the book store application.
+ *
+ * Methods:
+ * - getAdmin(): Manages admin authentication and displays admin dashboard or login form.
+ * - getExit(): Logs out the admin user and redirects to the main URL.
+ * - insertUsers(): Handles user creation, editing, and updating through forms and model interactions.
+ * - editBook(): Retrieves book and author data for editing and displays the edit book view.
+ * - updateBook(): Updates book information and shows a success message.
+ * - insertBook(): Adds a new book and shows a success message.
+ * - deleteBook($id): Deletes a book by its ID and redirects to the edit book page.
+ *
+ * Dependencies:
+ * - ModelAdmin: Handles data operations related to admin, users, and books.
+ * - ViewAdmin: Manages rendering of admin-related views and forms.
+ * - conf: Provides configuration constants (e.g., Url).
+ *
+ * Session and Request Handling:
+ * - Utilizes $_SESSION for authentication and role management.
+ * - Uses $_POST and $_GET for form submissions and user actions.
+ */
 <?php
 
 

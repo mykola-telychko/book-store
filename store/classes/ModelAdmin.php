@@ -1,3 +1,27 @@
+/**
+ * Class ModelAdmin
+ *
+ * Handles administrative operations for the book store application, including user management,
+ * book management, and author/genre relations. Uses PDO for database interactions.
+ *
+ * Methods:
+ * - __construct(): Initializes the database connection.
+ * - getAdmin(): Authenticates an admin user based on POST data.
+ * - insertUsers(): Inserts a new user into the database using POST data.
+ * - selectUsers(): Retrieves all users from the database.
+ * - selectOneUser(): Retrieves a single user by ID from GET data.
+ * - updateUser(): Updates user information based on POST data.
+ * - getBook(): Retrieves all books with their genres.
+ * - getAuthor(): Retrieves all authors grouped by book.
+ * - changeBook($id): Updates book and genre information based on POST data.
+ * - addBook(): Adds a new book, author, and genre using POST data.
+ * - delBook($id): Deletes a book by its ID.
+ *
+ * Note:
+ * - Many methods rely on direct access to $_POST and $_GET superglobals.
+ * - SQL queries are constructed using string interpolation, which may be vulnerable to SQL injection.
+ * - Passwords are hashed using md5, which is not recommended for secure password storage.
+ */
 <?php
 
 class ModelAdmin

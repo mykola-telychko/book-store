@@ -1,3 +1,26 @@
+/**
+ * Class Model
+ *
+ * Extends the Database class and provides methods for interacting with the book store database.
+ * Handles operations such as retrieving menu genres, book content, pagination, book details, prices,
+ * inserting orders into the basket, and searching for books/authors.
+ *
+ * Methods:
+ * - getMenu(): Retrieves all genres from the database.
+ * - db_result_to_array($result): Converts a MySQL result set to an array.
+ * - getContent(): Retrieves book and author information for a specific category and page.
+ * - getPage(): Generates pagination links for book categories.
+ * - getBook($id): Retrieves detailed information about a specific book and its author.
+ * - getPrice($id): Retrieves the price of a book by its ID.
+ * - insertBusket(): Inserts order information into the database for items in the user's cart.
+ * - getSearch(): Searches for books or authors based on a search term.
+ *
+ * Note:
+ * - Uses deprecated MySQL extension functions (mysql_query, mysql_fetch_array, etc.).
+ * - Input data is sanitized using mysql_real_escape_string and strip_tags.
+ * - Relies on session variables for cart and order management.
+ * - Some methods interact with a Controller class for URL parsing and error handling.
+ */
 <?php
 
 

@@ -1,3 +1,18 @@
+/**
+ * Class ViewAdmin
+ *
+ * Handles rendering of various admin views for the book store application.
+ *
+ * Methods:
+ * - getLogin(): Loads the admin login view.
+ * - showAdmin(): Loads the admin dashboard view based on the user's role.
+ * - showUserMenu(): Loads the user management menu view.
+ * - showUserForm(): Loads the form for adding a new user.
+ * - showSelectUsers($mod): Loads the view for selecting users. (Note: Typo in 'require_once')
+ * - showUpdateFormUser($mod): Loads the form for updating user information. (Note: Typo in 'require_once')
+ * - showEditBook($mod, $mod1): Loads the book editing view.
+ * - showSuccesUpdate(): Loads the success message view after updating a book.
+ */
 <?php
 
 

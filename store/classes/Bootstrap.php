@@ -1,3 +1,19 @@
+/**
+ * Class Bootstrap
+ *
+ * The Bootstrap class is responsible for initializing the application session and routing
+ * incoming requests to the appropriate controller methods based on the URL structure.
+ * It creates instances of Controller and ControllerAdmin, parses the URL, and dispatches
+ * actions such as displaying books, handling cart operations, processing orders, searching,
+ * and managing admin functionalities.
+ *
+ * Routing is handled via a switch statement on the first URL segment, with additional
+ * validation and parameter checks for each case. Error handling is performed by invoking
+ * the getError() method on invalid requests.
+ *
+ * Usage:
+ *   Instantiate this class at the entry point of the application to start session and route requests.
+ */
 <?php
 
 class Bootstrap

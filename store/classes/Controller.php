@@ -1,3 +1,39 @@
+/**
+ * Controller class for managing the main application logic of the book store.
+ *
+ * Handles routing, session management, cart operations, and interaction between
+ * models and views. Provides methods for displaying books, managing the shopping cart,
+ * handling search functionality, and rendering various pages.
+ *
+ * Methods:
+ * - __construct(): Initializes session variables for the cart, total items, and total price.
+ * - getURL(): Retrieves and parses the current URL for routing.
+ * - getIndex(): Loads and displays the main index page.
+ * - getError(): Loads and displays the error page.
+ * - getBooks(): Loads and displays the list of books.
+ * - getBook(): Loads and displays a single book's details.
+ * - addToCart($id): Adds a book to the cart by its ID.
+ * - getCart($id): Adds a book to the cart and displays the cart.
+ * - getBusket(): Displays the shopping basket or an empty basket message.
+ * - updateCart(): Updates the cart quantities based on user input.
+ * - totalItems($cart): Calculates and updates the total number of items in the cart.
+ * - totalPrice($cart): Calculates and updates the total price of items in the cart.
+ * - insertBusket(): Inserts the current basket into the database.
+ * - thankYou(): Displays the thank you page after checkout.
+ * - getSearch(): Initiates a search operation.
+ * - getSearchProduct($id): Displays search results for a specific product.
+ * - searchProduct($id): Searches for a product and displays its details.
+ *
+ * Dependencies:
+ * - Model: Handles data operations.
+ * - View: Handles rendering of pages.
+ * - conf: Configuration class for URLs.
+ *
+ * Session Variables Used:
+ * - $_SESSION['cart']: Stores cart items and their quantities.
+ * - $_SESSION['total_items']: Stores the total number of items in the cart.
+ * - $_SESSION['total_price']: Stores the total price of items in the cart.
+ */
 <?php
 
 class Controller
